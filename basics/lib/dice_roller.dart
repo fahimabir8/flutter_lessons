@@ -1,4 +1,5 @@
 import 'dart:math';
+import 'package:basics/styled_text.dart';
 import 'package:flutter/material.dart';
 
 final randomizer = Random();
@@ -27,6 +28,7 @@ class _DiceRollerState extends State<DiceRoller> {
     return Column(
       mainAxisSize: MainAxisSize.min,
       children: [
+        StyledText('Dice Roller'),
         Image.asset('assets/images/dice-$currentDiceRoll.png', width: 220),
         ElevatedButton(
           onPressed: rollDice,
